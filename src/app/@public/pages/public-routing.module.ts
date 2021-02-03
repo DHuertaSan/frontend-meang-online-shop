@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PublicComponent } from './public.component';
 import { PublicModule } from './public.module';
 
 const routes: Routes = [
   {
     path:'',
-    component: PublicModule,
+    component: PublicComponent,
     children:[
       {
         path: 'home',
